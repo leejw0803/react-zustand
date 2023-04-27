@@ -1,4 +1,9 @@
-import { Multiple, Default, Shallow } from "@components";
+import {
+  Multiple,
+  Default,
+  Shallow,
+  FetchingFromMultipleStore,
+} from "@components";
 
 function App() {
   return (
@@ -6,6 +11,7 @@ function App() {
       <Default />
       <Multiple />
       <Shallow />
+      <FetchingFromMultipleStore />
     </>
   );
 }
