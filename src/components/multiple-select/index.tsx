@@ -1,4 +1,5 @@
 import { useCountStore } from "@stores";
+import { shallow } from "zustand/shallow";
 
 function MultipleSelect() {
   const { count, doubleUp, reset } = useCountStore(
@@ -6,8 +7,10 @@ function MultipleSelect() {
       count,
       doubleUp,
       reset,
-    })
+    }),
+    shallow
   );
+
   return (
     <>
       <h1>Multiple state: {count}</h1>
