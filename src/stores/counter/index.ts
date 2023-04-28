@@ -6,6 +6,7 @@ type CounterState = {
   doubleUp: () => void;
   reset: () => void;
   setTrigger: () => void;
+  deleteAll: () => void;
 };
 
 const useCountStore = create<CounterState>((set) => ({
@@ -17,6 +18,7 @@ const useCountStore = create<CounterState>((set) => ({
     set(({ rerenderTrigger }) => ({
       rerenderTrigger: !rerenderTrigger,
     })),
+  deleteAll: () => set({}, true),
 }));
 
 export default useCountStore;

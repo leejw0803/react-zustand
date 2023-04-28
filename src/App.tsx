@@ -3,6 +3,7 @@ import {
   Default,
   Shallow,
   FetchingFromMultipleStore,
+  Overwrite,
 } from "@components";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Multiple />
       <Shallow />
       <FetchingFromMultipleStore />
+      <Overwrite />
     </>
   );
 }
